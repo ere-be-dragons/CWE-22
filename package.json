@@ -1,0 +1,23 @@
+{
+  "name": "@ere-be-dragons/cwe-22",
+  "version": "1.0.0",
+  "description": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "database:create": "node --no-warnings=ExperimentalWarning src/scripts/database-create.js",
+    "start": "node --no-warnings=ExperimentalWarning src/server.js"
+  },
+  "imports": {
+    "#*": "./src/*.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "express-session": "^1.18.2",
+    "handlebars": "^4.7.8"
+  }
+}
